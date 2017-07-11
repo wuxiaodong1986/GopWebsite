@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>交易详情</title>
+		<link rel="stylesheet" href="css/common.css" />
+	</head>
+	<body class="container">
+		<div class="commonhead">
+			<div class="commonheadtitle">
+				<div class="commonheadlogo"></div>
+				<div class="zhuye"></div>
+				<div class="heyue"></div>
+				<div class="zhongwen"></div>
+			</div>
+		</div>
+		<div class="commonmain">
+			<div class="contentmain">
+				<div style="height: 50px; width: 100%;">
+					<div class="tradedetail"></div>	
+				</div>
+				<div class="tradeidtable">
+					<table width="100%">
+						<tr style="line-height: 50px;">
+							<td width="5%" class="ywzt">id:</td>
+							<td width="30%" id="trxId" class="boldtr">b7fdsaienvicnancifnvnic7</td>
+							<td width="10%"></td>
+							<td width="5%" class="ywzt"></td>
+							<td width="30%" class="boldtr"></td>
+							<td width="5%" class="ywzt"></td>
+							<td width="15%" class="rmb"></td>
+						</tr>
+						<tr>
+							<td class="ywzt">From:</td>
+							<td class="boldtr" id="address1">assdfdsafdsfadsfadslffds</td>
+							<td><img src="img/arrow.png"  alt="arrow" /></td>
+							<td class="ywzt">To:</td>
+							<td class="boldtr" id="address2">afdsfdasfadsfdasfadsfadsfads</td>
+							<td class="ywzt">￥:</td>
+							<td class="rmb" id="amount">10000000.11211</td>
+						</tr>	
+					</table>
+				</div>
+				<div class="tradedetailtable" style="min-height: 700px;">
+					<table width="100%">
+						<thead>
+							<tr class="theadbg">
+      							<th style="font-family: 'SimHei'; float: left; padding-top: 12px; padding-left: 10px;">交易概况</th>
+    							<th></th>
+    							<th></th>
+    							<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td width="10%">大小</td>
+								<td width="40%">待定</td>
+								<td width="10%">手续费</td>
+								<td width="40%" id="fee">1.01</td>
+							</tr>
+							<tr class="trbg">
+								<td>区块数</td>
+								<td id="blockNum">2313123123</td>
+								<td>打包代理</td>
+								<td id="signee">213234xcfsdfsd232</td>
+							</tr>
+							<tr>
+								<td>确认时间</td>
+								<td id="timestamp">2016-10-30T09:32:00</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="trbg">
+								<td>备注</td>
+								<td id="memo">qweqweq</td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="commonfoot">
+			<div class="commonfoottitle">
+				business@thinkyoung.com.cn
+			</div>
+		</div>
+		<script type="text/javascript" src="ui/amaze/js/jquery.min.js"></script>
+		<script type="text/javascript">
+		var trxId=getUrlParam("trxId");
+		getTransactionByTrxId(trxId);
+		function getTransactionByTrxId(trxId)
+		{
+			$.ajax({
+			    type: "POST",
+			    url: "getTransactionByTrxId.do",
+			    data: {trxId:trxId},
+			    dataType: "json",
+			    success: function(data, textStatus)
+			    {
+		    		$("#trxId").empty().append(data.trxId);
+		    		$("#blockNum").empty().append(data.blockNum);
+		    		$("#address1").empty().append(data.address1);
+		    		$("#address2").empty().append(data.address2);
+		    		$("#amount").empty().append(data.amount);
+		    		$("#fee").empty().append(data.fee);
+		    		$("#timestamp").empty().append(data.timestamp);
+		    		$("#memo").empty().append(data.memo);
+		    		$("#signee").empty().append(data.signee);
+			    },
+			    error: function(XMLHttpRequest, textStatus, errorThrown)
+			    {
+			      alert(XMLHttpRequest.status+" 你懂的");
+			    }
+			});
+		}
+		
+		function getUrlParam(name) 
+		{
+		    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+		    var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+		    if (r != null) return unescape(r[2]); return null; //返回参数值
+		}
+		</script>
+	</body>
+</html>

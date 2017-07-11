@@ -1,0 +1,22 @@
+.leftsolid{
+	border-left: 2px solid #CCCCCC;
+}
+
+.mainpagetheadbg{
+	background-color: aqua;
+	height: 50px;
+	width: 100%;
+	text-align:left;
+	font-size: 95%; 
+	font-family: '微软雅黑'; 
+	font-weight: bold;
+}
+
+.mainpagetheadbg th{
+	padding-left: 10px;
+}
+
+.searcharea
+{
+	float: left;
+}

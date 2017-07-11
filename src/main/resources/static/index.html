@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>区块链浏览器首页</title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/mainpage.css" />
+	</head>
+	<body class="container">
+		<div class="commonhead">
+			<div class="commonheadtitle">
+				<div class="commonheadlogo"></div>
+				<div class="zhuye"></div>
+				<div class="heyue"></div>
+				<div class="zhongwen"></div>
+			</div>
+		</div>
+		<div class="commonmain">
+			<div class="contentmain">
+				<div class="tradeidtable" style="width: 100%; text-align: center; font-family: '微软雅黑';">
+					<table width="100%">
+						<tr style="line-height: 50px; font-size: 90%;">
+							<td width="20%">交易总量</td>
+							<td width="20%" class="leftsolid">总交易金额</td>
+							<td width="20%" class="leftsolid">总手续费</td>
+							<td width="20%" class="leftsolid">每小时交易量</td>
+							<td width="20%" class="leftsolid">交易峰值每小时</td>
+						</tr>
+						<tr>
+							<td id="transCount">1002</td>
+							<td id="transAmount" class="leftsolid">1000000000</td>
+							<td id="transFee" class="leftsolid">10000.00</td>
+							<td id="transAveHour" class="leftsolid">3600000</td>
+							<td id="maxHourCount" class="leftsolid">3600000</td>
+						</tr>	
+					</table>
+				</div>
+				<div class="tradedetailtable">
+					<table width="100%">
+						<thead>
+							<tr class="mainpagetheadbg">
+      							<th width="16.6%">高度</th>
+    							<th width="16.6%">时间</th>
+    							<th width="16.6%">交易数</th>
+    							<th width="16.6%">交易额</th>
+    							<th width="16.6%">产块代理</th>
+    							<th width="16.6%">大小 (kB)</th>
+							</tr>
+						</thead>
+						<tbody id="blocks">
+							<tr>
+								<td>大小</td>
+								<td>10.8kB</td>
+								<td>手续费</td>
+								<td>1.01</td>
+								<td>1.01</td>
+								<td>1.01</td>
+							</tr>
+							<tr class="trbg">
+								<td>大小</td>
+								<td>10.8kB</td>
+								<td>手续费</td>
+								<td>1.01</td>
+								<td>1.01</td>
+								<td>1.01</td>
+							</tr>
+							<tr>
+								<td>大小</td>
+								<td>10.8kB</td>
+								<td>1.01</td>
+								<td>1.01</td>
+								<td>1.01</td>
+								<td>1.01</td>
+							</tr>
+							<tr class="trbg">
+								<td>大小</td>
+								<td>10.8kB</td>
+								<td>1.01</td>
+								<td>1.01</td>
+								<td>1.01</td>
+								<td>1.01</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div style="width: 1200px; height: 50px;">
+				</div>
+				<div class="tradedetailtable" style="min-height: 400px;">
+					<table width="55%" style="float: left;">
+						<thead>
+							<tr class="mainpagetheadbg">
+      							<th width="50%">最近交易记录</th>
+    							<th width="25%"></th>
+    							<th width="25%"></th>
+							</tr>
+						</thead>
+						<tbody id="transactions">
+							<tr>
+								<td>asdbdf812fdsfdsa1f58dsf1dsasdfdsfsd</td>
+								<td>10.8kB</td>
+								<td>手续费</td>
+							</tr>
+							<tr class="trbg">
+								<td>asdbdf812fdsfdsa1f58dsf1dsasdfds</td>
+								<td>10.8kB</td>
+								<td>手续费</td>
+							</tr>
+							<tr>
+								<td>asdbdf812fdsfdsa1f58dsf1dssdfads</td>
+								<td>10.8kB</td>
+								<td>1.01</td>
+							</tr>
+							<tr class="trbg">
+								<td>asdbdf812fdsfdsa1f58dsf1ddsfdsas</td>
+								<td>10.8kB</td>
+								<td>1.01</td>
+							</tr>
+						</tbody>
+					</table>
+					<table width="42%" style="float: left; margin-left: 3%;">
+							<thead>
+							<tr>
+								<td colspan = " 3 ">
+									<style type="text/css">
+.kuan input{ width: 390px; height: 45px; float: left;}									
+.an input{ width:90px; height:45px; background-image: url(img/search.png); border:none;float:left; cursor:pointer; margin-left: 10px;}
+</style>
+									<form action="" method="get">
+<div class="kuan"><input name="" type="text" /></div><!--搜索框-->
+<div class="an"><input name="" type="button" /></div><!--搜索按钮-->
+</form>
+								</td>	
+							</tr>
+							</thead>
+							<tr></tr>
+							<tbody style="border:1px solid #00FFFF;">
+							<tr style="border-bottom:1px solid #00FFFF;">
+								<td colspan="3"><h2 style="color:#CCCCCC;">新闻</h2></td>
+							</tr>
+							<tr>
+								<td colspan="3">asdbdf812fdsfdsa1f58dsf1dsasdfdsfsd</td>
+							</tr>
+							<tr>
+								<td colspan="3">asdbdf812fdsfdsa1f58dsf1dsasdfds</td>
+							</tr>
+							<tr>
+								<td colspan="3">asdbdf812fdsfdsa1f58dsf1dssdfads</td>
+							</tr>
+							<tr>
+								<td colspan="3">asdbdf812fdsfdsa1f58dsf1ddsfdsas</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="commonfoot">
+			<div class="commonfoottitle">
+				business@thinkyoung.com.cn
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="ui/amaze/js/jquery.min.js"></script>
+		<script type="text/javascript">
+		timework();
+		setInterval("timework()",10000);
+		
+		function timework()
+		{
+			loadStatic();
+			loadBlock();
+			loadTransaction();
+		}
+		
+		
+		function loadStatic()
+		{
+			$.ajax({
+			    type: "POST",
+			    url: "getStatis.do",
+			    dataType: "json",
+			    success: function(data, textStatus)
+			    {
+		    		$("#transCount").empty().append(data.transCount);
+		    		$("#transAmount").empty().append(data.transAmount);
+		    		$("#transFee").empty().append(data.transFee);
+		    		$("#transAveHour").empty().append(data.transAveHour);
+		    		$("#maxHourCount").empty().append(data.maxHourCount);
+			    },
+			    error: function(XMLHttpRequest, textStatus, errorThrown)
+			    {
+			      alert(XMLHttpRequest.status+" 你懂的");
+			    }
+			});
+		}
+		
+		function loadBlock()
+		{
+			$.ajax({
+			    type: "POST",
+			    url: "getBlocks.do",
+			    dataType: "json",
+			    success: function(data, textStatus)
+			    {
+			    	var blocks = $("#blocks");
+			    	blocks.empty();
+			    	
+			    	for (var o in data)
+			    	{
+			    		var block;
+			    		if (o % 2 == 0)
+			    		{
+			    			block = $('<tr onclick="hrefBlock('+data[o].blockNum+')"><td>'+data[o].blockNum+'</td><td>'+data[o].timestamp+'</td><td>'+data[o].transCount+'</td><td>'+data[o].amount+'</td><td>'+data[o].signee+'</td><td>'+data[o].blockSize+'</td></tr>');
+			    		}
+			    		else
+			    		{
+			    			block = $('<tr onclick="hrefBlock('+data[o].blockNum+')" class="trbg"><td>'+data[o].blockNum+'</td><td>'+data[o].timestamp+'</td><td>'+data[o].transCount+'</td><td>'+data[o].amount+'</td><td>'+data[o].signee+'</td><td>'+data[o].blockSize+'</td></tr>');
+			    		}
+			    		
+			    		
+			    		blocks.append(block);
+			    	}
+			    },
+			    error: function(XMLHttpRequest, textStatus, errorThrown)
+			    {
+			      alert(XMLHttpRequest.status+" 你懂的");
+			    }
+			});
+		}
+		
+		function loadTransaction()
+		{
+			$.ajax({
+			    type: "POST",
+			    url: "getTransactions.do",
+			    dataType: "json",
+			    success: function(data, textStatus)
+			    {
+			    	var transactions = $("#transactions");
+			    	transactions.empty();
+			    	
+			    	for (var o in data)
+			    	{
+			    		var transaction;
+			    		if (o % 2 == 0)
+			    		{
+			    			transaction = $('<tr onclick="hrefTransaction(\''+data[o].trxId+'\')"><td>'+data[o].trxId+'</td><td>'+data[o].disTime+'</td><td>'+data[o].amount+'</td></tr>');
+			    		}
+			    		else
+			    		{
+			    			transaction = $('<tr onclick="hrefTransaction(\''+data[o].trxId+'\')" class="trbg"><td>'+data[o].trxId+'</td><td>'+data[o].disTime+'</td><td>'+data[o].amount+'</td></tr>');
+			    		}
+			    		
+			    		transactions.append(transaction);
+			    	}
+			    },
+			    error: function(XMLHttpRequest, textStatus, errorThrown)
+			    {
+			      alert(XMLHttpRequest.status+" 你懂的");
+			    }
+			});
+		}
+		
+		function hrefBlock(blockNum)
+		{
+			window.location.href="blockInfo.html?blockNum="+blockNum;
+		}
+		
+		function hrefTransaction(trxId)
+		{
+			window.location.href="transactionsInfo.html?trxId="+trxId;
+		}
+		</script>
+	</body>
+</html>
